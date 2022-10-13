@@ -14,13 +14,4 @@
     <artifactId>migration</artifactId>
     <packaging>jar</packaging>
 
-    <name>migration</name>
-    <url>http://maven.apache.org</url>
-
-    <dependencies>
-        <dependency>
-            <groupId>liga.medical</groupId>
-            <artifactId>dto</artifactId>
-        </dependency>
-    </dependencies>
 </project>
