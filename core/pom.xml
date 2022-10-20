@@ -33,7 +33,6 @@
         </dependency>
 
         <dependency>
-            <!--        Эта зависимость тянет компоненты спринга их тоже нужно сканировать-->
             <groupId>liga.medical</groupId>
             <artifactId>common-services</artifactId>
         </dependency>
@@ -56,8 +55,9 @@
 
     </dependencies>
 
+
     <build>
-        <!--        <finalName>analyzer-service</finalName>-->
+        <finalName>person-service-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
