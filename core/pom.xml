@@ -33,7 +33,6 @@
         </dependency>
 
         <dependency>
-            <!--        Эта зависимость тянет компоненты спринга их тоже нужно сканировать-->
             <groupId>liga.medical</groupId>
             <artifactId>common-services</artifactId>
         </dependency>
@@ -55,6 +54,7 @@
         </dependency>
 
     </dependencies>
+
 
     <build>
         <finalName>person-service-${project.version}</finalName>
