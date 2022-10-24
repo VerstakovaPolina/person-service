@@ -13,7 +13,7 @@ DELETE FROM illness WHERE id NOT IN
 SELECT * FROM medical_card ORDER BY id LIMIT
     (SELECT COUNT(id)/2 FROM medical_card);
 
-SELECT child.first_name, child.last_name, parent.first_name, parent.last_name
+SELECT (child.first_name, child.last_name) AS children, (parent.first_name, parent.last_name) AS parents
 FROM person_data AS child JOIN person_data AS parent ON child.parent_id=parent.id
 WHERE parent.medical_card_id IN (SELECT id FROM medical_card WHERE med_status IS NULL);
 
