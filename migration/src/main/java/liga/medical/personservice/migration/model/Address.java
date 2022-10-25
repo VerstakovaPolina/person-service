@@ -4,8 +4,6 @@ import lombok.Data;
 import lombok.NonNull;
 import org.springframework.data.annotation.Id;
 
-import javax.persistence.ForeignKey;
-
 @Data
 public class Address {
 
