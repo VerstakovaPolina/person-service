@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+<h1>Зарегистрируйтесь</h1>
+<form th:action="@{/registration}" th:object="${users}" method="post">
+    <p>Введите логин: <input type="text" th:field="*{users.getUsername()}" /></p>
+    <p>Введите пароль: <input type="text" th:field="*{users.getPassword()}" /></p>
+    <p><input type="submit" value="Подтвердить регистрацию" /></p>
+
+</body>
+</html>
