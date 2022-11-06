@@ -5,6 +5,12 @@ create table if not exists medical_card
     registry_dt date not null,
     med_status char);
 
+create table if not exists contact
+( id bigint not null primary key,
+  phone_number varchar (32) not null,
+  email varchar (128),
+  profile_link text);
+
 create table if not exists person_data
 ( id bigint not null primary key,
     last_name varchar (255) not null,
@@ -23,12 +29,6 @@ create table if not exists illness
     heaviness char,
     appearance_dttm timestamp not null,
     recovery_dt date);
-
-create table if not exists contact
-( id bigint not null primary key,
-    phone_number varchar (32) not null,
-    email varchar (128),
-    profile_link text);
 
 create table if not exists  address
 (
