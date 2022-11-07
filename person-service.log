@@ -328,3 +328,7 @@ Using generated security password: 3d21fd73-db0e-4188-a7b1-043b9ab16ff3
 2022-11-07 16:28:22.508  INFO 16620 --- [RMI TCP Connection(1)-192.168.31.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-11-07 16:28:22.529  INFO 16620 --- [RMI TCP Connection(1)-192.168.31.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
 2022-11-07 16:28:45.505  WARN 16620 --- [http-nio-8084-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [288] milliseconds.
+2022-11-07 16:34:12.252  INFO 16620 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-07 16:34:12.260  INFO 16620 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-07 16:34:12.264  INFO 16620 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-07 16:34:12.281  INFO 16620 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
