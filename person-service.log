@@ -1,0 +1,48 @@
+2022-11-07 13:18:41.118  INFO 13372 --- [main] l.m.p.core.PersonServiceApplication      : Starting PersonServiceApplication on LAPTOP-NBFJF94I with PID 13372 (C:\Users\Полина\Downloads\person-service\core\target\classes started by Полина in C:\Users\Полина\Downloads\person-service)
+2022-11-07 13:18:41.127  INFO 13372 --- [main] l.m.p.core.PersonServiceApplication      : No active profile set, falling back to default profiles: default
+2022-11-07 13:18:44.147  INFO 13372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-07 13:18:44.154  INFO 13372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-07 13:18:44.206  INFO 13372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 JDBC repository interfaces.
+2022-11-07 13:18:44.235  INFO 13372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-11-07 13:18:44.236  INFO 13372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-11-07 13:18:44.271  INFO 13372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2022-11-07 13:18:45.755  INFO 13372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-11-07 13:18:45.784  INFO 13372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-07 13:18:45.785  INFO 13372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-11-07 13:18:46.222  INFO 13372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-07 13:18:46.223  INFO 13372 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4975 ms
+2022-11-07 13:18:46.826  INFO 13372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-07 13:18:47.098  INFO 13372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-07 13:18:47.852  INFO 13372 --- [main] liquibase.database                       : Set default schema name to public
+2022-11-07 13:18:48.057  INFO 13372 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2022-11-07 13:18:48.733  INFO 13372 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2022-11-07 13:18:48.881  INFO 13372 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2022-11-07 13:18:49.091  INFO 13372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-07 13:18:49.184  INFO 13372 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-07 13:18:49.324  INFO 13372 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2022-11-07 13:18:49.601  WARN 13372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-07 13:18:49.712  INFO 13372 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-11-07 13:18:50.050  INFO 13372 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-11-07 13:18:50.229  WARN 13372 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: = classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2022-11-07 13:18:50.601  INFO 13372 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-07 13:18:50.628  INFO 13372 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-07 13:18:50.875  INFO 13372 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b3a5b46f-6512-41c6-b1e4-22358d6ab748
+
+2022-11-07 13:18:51.141  INFO 13372 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3245efdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@2095c331, org.springframework.security.web.header.HeaderWriterFilter@578d472a, org.springframework.security.web.csrf.CsrfFilter@be1c08a, org.springframework.security.web.authentication.logout.LogoutFilter@7ccf6114, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d7aa291, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@40ddf339, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f0e7fa8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72ec16f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b795db7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55f6f965, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24d7657b, org.springframework.security.web.session.SessionManagementFilter@54b2d002, org.springframework.security.web.access.ExceptionTranslationFilter@7296fe0b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c06b1bc]
+2022-11-07 13:18:51.450  INFO 13372 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-11-07 13:18:51.628  INFO 13372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2022-11-07 13:18:51.632  INFO 13372 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-11-07 13:18:51.633  INFO 13372 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-11-07 13:18:51.678  INFO 13372 --- [main] l.m.p.core.PersonServiceApplication      : Started PersonServiceApplication in 11.626 seconds (JVM running for 14.125)
+2022-11-07 13:18:52.241  INFO 13372 --- [RMI TCP Connection(2)-192.168.31.12] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-07 13:18:52.243  INFO 13372 --- [RMI TCP Connection(2)-192.168.31.12] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-07 13:18:52.262  INFO 13372 --- [RMI TCP Connection(2)-192.168.31.12] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2022-11-07 13:50:10.500  WARN 13372 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m53s55ms366µs600ns).
+2022-11-07 14:38:14.222  WARN 13372 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m3s428ms99µs200ns).
+2022-11-07 14:49:17.213  WARN 13372 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m3s33ms814µs200ns).
+2022-11-07 14:50:23.557  INFO 13372 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-07 14:50:23.578  INFO 13372 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-11-07 14:50:23.583  INFO 13372 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-07 14:50:23.596  INFO 13372 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
