@@ -1,8 +1,6 @@
 package liga.medical.personservice.core.service;
 
-import liga.medical.personservice.core.mapper.MedicalCardMapper;
 import liga.medical.personservice.core.mapper.PersonDataMapper;
-import liga.medical.personservice.core.model.MedicalCard;
 import liga.medical.personservice.core.model.PersonData;
 import org.springframework.stereotype.Service;
 
