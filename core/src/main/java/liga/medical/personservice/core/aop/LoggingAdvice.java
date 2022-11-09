@@ -37,4 +37,29 @@ public class LoggingAdvice {
         log.info("Результат вызова метода "+methodName+"() : "+mapper.writeValueAsString(object));
         return object;
     }
+
+    @Pointcut(value = "execution(* liga.medical.personservice.core.queuelistener.RabbitRouterListener.*(..))")
+    public void pointcutLog() {}
+
+    @Around("pointcutLog()")
+    public Object appLog(ProceedingJoinPoint joinPoint) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+
+        String methodName = joinPoint.getSignature().getName();
+        String className = joinPoint.getTarget().getClass().getName();
+
+        Object[] array = joinPoint.getArgs();
+
+        log.info("В методе "+methodName+"() класса "+ className+"было получено сообщение: "+mapper.writeValueAsString(array));
+
+        Object object = null;
+        try {
+            object = joinPoint.proceed();
+        }catch (Throwable e) {
+            e.printStackTrace();
+        }
+        log.info("Сообщение добавлено в базу данных в таблицу signals : "+mapper.writeValueAsString(object));
+        return object;
+    }
 }
+
