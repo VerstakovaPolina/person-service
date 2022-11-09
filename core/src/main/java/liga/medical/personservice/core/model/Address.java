@@ -1,33 +1,43 @@
 package liga.medical.personservice.core.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.MappedCollection;
+import org.springframework.data.relational.core.mapping.Table;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Table("address")
 public class Address {
 
     @Id
-    @NonNull
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     private long id;
 
-    @NonNull
-    private long contactId;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @MappedCollection(idColumn = "id", keyColumn = "contact_id")
+    private Contact contact;
 
-    @NonNull
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private long countryId;
 
-    @NonNull
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String city;
 
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     private long index;
 
-    @NonNull
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String street;
 
-    @NonNull
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String building;
 
+    @JsonInclude(JsonInclude.Include.NON_DEFAULT)
     private String flat;
 
 }
